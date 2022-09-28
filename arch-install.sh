@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "terminator &" > `/.xinitrc
+echo "terminator &" > ~/.xinitrc
 echo "exec jwm" > ~/.xinitrc
 
 # xorg
