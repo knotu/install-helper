@@ -15,7 +15,7 @@ pacman --needed -S firefox opera opera-ffmpeg-codecs vivaldi vivaldi-ffmpeg-code
 pacman --needed -S moc mpv pcsx2 steam 
 # cli
 pacman --needed -S atool bash-completion btop ffmpeg ffmpeg4.4 htop nano ncdu newsboat pulsemixer rsync weechat xbindkeys xcolor xdotool yt-dlp 
-#gui and other
+# gui and other
 pacman --needed -S galculator gimp keepassxc meld scite veracrypt virtualbox virtualbox-guest-utils noto-fonts noto-fonts-emoji
 
 #enable services
