@@ -1,12 +1,26 @@
 #!/usr/bin/env bash
 
 
-pacman --noconfirm --needed -S xorg-server xorg-xdpyinfo xorg-xev xorg-xinit xorg-xinput xorg-xkill xorg-xrandr xorg-xsetroot xorg-xwayland linux-headers git ntfs-3g openssh refind jwm terminator pcmanfm lxappearance lxqt-notificationd lxrandr nitrogen dmenu redshift scrot xterm firefox opera opera-ffmpeg-codecs vivaldi vivaldi-ffmpeg-codecs moc mpv pcsx2 steam atool bash-completion btop ffmpeg ffmpeg4.4 htop nano ncdu newsboat pulsemixer rsync weechat xbindkeys xcolor xdotool yt-dlp galculator gimp keepassxc meld scite veracrypt virtualbox virtualbox-guest-utils nvidia-dkms nvidia-settings noto-fonts noto-fonts-emoji
+#!/usr/bin/env bash
+
+# xorg
+pacman --needed -S xorg-server xorg-xdpyinfo xorg-xev xorg-xinit xorg-xinput xorg-xkill xorg-xrandr xorg-xsetroot xorg-xwayland 
+# core
+pacman --needed -S linux-headers git ntfs-3g openssh refind nvidia-dkms nvidia-settings
+# desktop
+pacman --needed -S jwm terminator pcmanfm lxappearance lxqt-notificationd lxrandr nitrogen dmenu redshift scrot xterm 
+# browser
+pacman --needed -S firefox opera opera-ffmpeg-codecs vivaldi vivaldi-ffmpeg-codecs 
+# entertainment
+pacman --needed -S moc mpv pcsx2 steam 
+# cli
+pacman --needed -S atool bash-completion btop ffmpeg ffmpeg4.4 htop nano ncdu newsboat pulsemixer rsync weechat xbindkeys xcolor xdotool yt-dlp 
+#gui and other
+pacman --needed -S galculator gimp keepassxc meld scite veracrypt virtualbox virtualbox-guest-utils noto-fonts noto-fonts-emoji
 
 #enable services
 sudo systemctl enable sshd
 sudo systemctl start sshd
 
 echo " After installing rEFInd and running refind-install add 'ibt=off' to kernel parameters in /boot/refind_linux.conf"
-
 
