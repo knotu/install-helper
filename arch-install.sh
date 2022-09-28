@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo "terminator &" > `/.xinitrc
+echo "exec jwm" > ~/.xinitrc
+
 # xorg
 pacman --needed -S xorg-server xorg-xdpyinfo xorg-xev xorg-xinit xorg-xinput xorg-xkill xorg-xrandr xorg-xsetroot xorg-xwayland 
 # core
