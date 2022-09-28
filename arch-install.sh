@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-
-#!/usr/bin/env bash
-
 # xorg
 pacman --needed -S xorg-server xorg-xdpyinfo xorg-xev xorg-xinit xorg-xinput xorg-xkill xorg-xrandr xorg-xsetroot xorg-xwayland 
 # core
@@ -19,8 +16,8 @@ pacman --needed -S atool bash-completion btop ffmpeg ffmpeg4.4 htop nano ncdu ne
 pacman --needed -S galculator gimp keepassxc meld scite veracrypt virtualbox virtualbox-guest-utils noto-fonts noto-fonts-emoji
 
 #enable services
-sudo systemctl enable sshd
-sudo systemctl start sshd
+systemctl enable sshd
+systemctl start sshd
 
 echo " After installing rEFInd and running refind-install add 'ibt=off' to kernel parameters in /boot/refind_linux.conf"
 
