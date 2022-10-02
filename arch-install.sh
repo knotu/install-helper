@@ -16,7 +16,7 @@ pacman --needed -S moc mpv pcsx2 steam
 # cli
 pacman --needed -S atool bash-completion btop ffmpeg ffmpeg4.4 htop imagemagick micro  ncdu newsboat pulsemixer rsync weechat xbindkeys xcolor xdotool yt-dlp 
 # gui and other
-pacman --needed -S galculator gimp keepassxc meld scite veracrypt virtualbox virtualbox-guest-utils noto-fonts noto-fonts-emoji ttf-liberation
+pacman --needed -S galculator gimp gparted keepassxc meld scite veracrypt virtualbox virtualbox-guest-utils noto-fonts noto-fonts-emoji ttf-liberation
 
 #enable services
 systemctl enable sshd
