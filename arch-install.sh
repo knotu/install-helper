@@ -4,7 +4,7 @@ echo "terminator &" > ~/.xinitrc
 echo "exec jwm" > ~/.xinitrc
 
 # xorg
-pacman --needed -S xorg-server xorg-xdpyinfo xorg-xev xorg-xinit xorg-xinput xorg-xkill xorg-xrandr xorg-xsetroot xorg-xwayland 
+pacman --needed -S xorg-server xorg-xdpyinfo xorg-xev xorg-xinit xorg-xinput xorg-xkill xorg-xrandr xorg-xsetroot xorg-xwayland xorg-xev
 # core
 pacman --needed -S linux-headers git ntfs-3g openssh refind nvidia-dkms nvidia-settings
 # desktop
@@ -19,8 +19,7 @@ pacman --needed -S atool bash-completion btop ffmpeg ffmpeg4.4 htop imagemagick 
 pacman --needed -S galculator gimp gparted keepassxc meld scite veracrypt virtualbox virtualbox-guest-utils noto-fonts noto-fonts-emoji ttf-liberation
 
 #enable services
-systemctl enable sshd
-systemctl start sshd
+systemctl enable --now sshd
 
 echo
 echo
