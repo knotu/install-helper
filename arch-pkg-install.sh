@@ -16,7 +16,7 @@ pacman --needed -S jwm pcmanfm dunst dmenu simplescreenrecorder xclip xterm xwal
 # browser
 pacman --needed -S firefox vivaldi vivaldi-ffmpeg-codecs 
 # entertainment
-pacman --needed -S moc mpv pcsx2 steam pinta
+pacman --needed -S moc mpv pcsx2 steam mtpaint
 # cli
 pacman --needed -S atool bash-completion btop ffmpeg ffmpeg4.4 imagemagick micro ncdu newsboat pulsemixer rsync weechat sxhkd xdotool yt-dlp 
 # gui and other
