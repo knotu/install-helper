@@ -12,7 +12,7 @@ pacman --needed -S mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon corectrl
 # core
 pacman --needed -S linux-headers git ntfs-3g openssh udisks2 refind
 # desktop
-pacman --needed -S jwm pcmanfm dunst dmenu simplescreenrecorder xclip xterm xwallpaper  
+pacman --needed -S jwm pcmanfm dunst dmenu xclip xterm xwallpaper  
 # browser
 pacman --needed -S firefox vivaldi vivaldi-ffmpeg-codecs 
 # entertainment
