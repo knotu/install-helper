@@ -14,7 +14,7 @@ sudo xbps-install -Syv void-repo-multilib
 sudo xbps-install base-devel libX11-devel libXft-devel libXinerama-devel
 
 # xorg-minimal and graphics
-sudo xbps-install xorg-minimal corectrl mesa-dri mesa-vaapi mesa-vdpau xf86-video-amdgpu vulkan-loader mesa-vulkan-radeon 
+sudo xbps-install xorg-minimal corectrl mesa-dri mesa-vaapi mesa-vdpau xf86-video-amdgpu vulkan-loader mesa-vulkan-radeon libgcc-32bit libstdc++-32bit libdrm-32bit libglvnd-32bit mesa-dri-32bit mesa-vulkan-radeon-32bit vulkan-loader-32bit
 
 # desktop and gui based 
 sudo xbps-install dmenu dunst firefox gparted jwm keepassxc meld moc mpv mtpaint pcmanfm scite steam synergy
@@ -23,7 +23,7 @@ sudo xbps-install dmenu dunst firefox gparted jwm keepassxc meld moc mpv mtpaint
 sudo xbps-install elogind ffmpeg moc mpv pipewire pulsemixer 
 
 # cli based
-sudo xbps-install alacritty atool bash-completion bashmount btop ImageMagick micro ncdu newsboat rsync sxhkd weechat xdotool xrdb xterm stools xwallpaper yt-dlp
+sudo xbps-install alacritty atool bash-completion bashmount btop ImageMagick lm_sensors micro ncdu newsboat rsync sxhkd weechat xdotool xrdb xsetroot xterm xtools xwallpaper yt-dlp
 
 # fonts
 sudo xbps-install liberation-fonts-ttf noto-fonts-emoji noto-fonts-ttf xorg-fonts
@@ -37,7 +37,7 @@ sudo ln -s /etc/sv/elogind /var/service
 ## XBPS source packages (for building)
 # clone repo
 
-git clone --depth=1 https://github.com/void-linux/void-packages.git
+#git clone --depth=1 https://github.com/void-linux/void-packages.git
 
 #cd void-packages
 #./xbps-src binary-bootstrap
