@@ -8,28 +8,28 @@ echo
 echo 'shopt -s autocd' 
 echo "PROMPT_COMMAND='[[ ${__new_wd:=$PWD} != $PWD ]] && ls -CF;__new_wd=$PWD' # ls after cding"
 echo
-echo 'alias update='sudo xbps-install -Su''
-echo 'alias install='sudo xbps-install''
-echo 'alias pkgfind='xbps-query -Rs''
-echo 'alias remove='sudo xbps-remove -R''
-echo 'alias clean-cache='sudo xbps-remove -O''
-echo 'alias orphans='sudo xbps-remove -Oo''
+echo "alias update='sudo xbps-install -Su'"
+echo "alias install='sudo xbps-install'"
+echo "alias pkgfind='xbps-query -Rs'"
+echo "alias remove='sudo xbps-remove -R'"
+echo "alias clean-cache='sudo xbps-remove -O'"
+echo "alias orphans='sudo xbps-remove -Oo''"
 echo
-echo 'alias edit=micro' 
-echo 'alias q='exit'' 
-}  >> /tmp/.bashrc
+echo "alias edit=micro" 
+echo "alias q='exit'"
+}  >> ~/.bashrc
 
 {
 echo "eval \$(dbus-launch --sh-syntax --exit-with-x11)"
 echo
-echo 'pipewire &'
-echo 'pipewire-pulse &'
+echo "pipewire &'"
+echo "pipewire-pulse &"
 echo
-echo "xterm &"
+echo "alacritty &"
 echo "exec jwm"
-} >> /tmp/.xinitrc
+} >> ~/.xinitrc
 
 {
- echo 'Nsxiv.*.background: #0c0c0c'
- echo 'Nsxiv.*.foreground: #414141'
-} >> /tmp/.Xresources
+ echo "Nsxiv.*.background: #0c0c0c"
+ echo "Nsxiv.*.foreground: #414141"
+} >> ~/.Xresources
