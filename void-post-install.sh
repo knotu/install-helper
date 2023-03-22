@@ -29,7 +29,7 @@ sudo xbps-install dmenu dunst firefox gparted jwm keepassxc meld moc mpv mtpaint
 sudo xbps-install elogind ffmpeg moc mpv pipewire pulsemixer alsa-plugins-pulseaudio
 
 # cli based
-sudo xbps-install alacritty atool bash-completion bashmount btop ImageMagick lm_sensors micro ncdu newsboat rsync sxhkd weechat xdotool xrdb xtools yt-dlp
+sudo xbps-install alacritty atool bash-completion bashmount btop ImageMagick lm_sensors micro ncdu newsboat rsync sxhkd weechat xdotool xrdb xterm xtools yt-dlp
 
 # unsorted various
 sudo xbps-install libgcc-32bit libstdc++-32bit xset xrandr gtk+ imlib2 xkill 
