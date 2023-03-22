@@ -1,37 +1,44 @@
 #!/usr/bin/env bash
 
-# update the system
-sudo xbps-install -Suy
+set -e
+
+## updating and setting up repos
 
 # add nonfree repo for things like steam
 sudo xbps-install -Sy void-repo-nonfree
 
-# add multilib for things like lib32 mesa
+# add multili(mesa)
 sudo xbps-install -Syv void-repo-multilib{,-nonfree}
-sudo xbps-install -Syv void-repo-multilib
+
+# update the system
+sudo xbps-install -Suy
+sudo xbps-install -u xbps
+
+## installing additional packages
 
 # development
 sudo xbps-install base-devel libX11-devel libXft-devel libXinerama-devel
 
 # xorg-minimal and graphics
-sudo xbps-install xorg-minimal corectrl mesa-dri mesa-vaapi mesa-vdpau xf86-video-amdgpu vulkan-loader mesa-vulkan-radeon libgcc-32bit libstdc++-32bit libdrm-32bit libglvnd-32bit mesa-dri-32bit mesa-vulkan-radeon-32bit vulkan-loader-32bit
+sudo xbps-install xorg-minimal corectrl mesa-dri mesa-vaapi mesa-vdpau xf86-video-amdgpu vulkan-loader mesa-vulkan-radeon libdrm-32bit libglvnd-32bit mesa-dri-32bit mesa-vulkan-radeon-32bit vulkan-loader-32bit
 
 # desktop and gui based 
-sudo xbps-install dmenu dunst firefox gparted jwm keepassxc meld moc mpv mtpaint pcmanfm scite steam synergy
+sudo xbps-install dmenu dunst firefox gparted jwm keepassxc meld moc mpv mtpaint pcmanfm scite steam synergy xsetroot xwallpaper
 
 # audio and video
-sudo xbps-install elogind ffmpeg moc mpv pipewire pulsemixer 
+sudo xbps-install elogind ffmpeg moc mpv pipewire pulsemixer alsa-plugins-pulseaudio
 
 # cli based
-sudo xbps-install alacritty atool bash-completion bashmount btop ImageMagick lm_sensors micro ncdu newsboat rsync sxhkd weechat xdotool xrdb xsetroot xterm xtools xwallpaper yt-dlp
+sudo xbps-install alacritty atool bash-completion bashmount btop ImageMagick lm_sensors micro ncdu newsboat rsync sxhkd weechat xdotool xrdb xtools yt-dlp
+
+# unsorted various
+sudo xbps-install libgcc-32bit libstdc++-32bit xset xrandr gtk+ imlib2 xkill 
 
 # fonts
 sudo xbps-install liberation-fonts-ttf noto-fonts-emoji noto-fonts-ttf xorg-fonts
 
-# enable dbus
+# enable dbus and elogind services
 sudo ln -s /etc/sv/dbus /var/service
-
-# enable elogind
 sudo ln -s /etc/sv/elogind /var/service
 
 ## XBPS source packages (for building)
@@ -42,5 +49,5 @@ sudo ln -s /etc/sv/elogind /var/service
 #cd void-packages
 #./xbps-src binary-bootstrap
 # xbps-src update-check
-# 
+
 
