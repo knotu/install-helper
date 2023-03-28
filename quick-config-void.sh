@@ -3,7 +3,7 @@
 #my quick setup before I copy other settings over
 
 {
-echo 'PATH=$PATH:$HOME/bin' 
+echo "PATH=$PATH:$HOME/bin" 
 echo 
 echo 'shopt -s autocd'
 echo 
@@ -23,10 +23,10 @@ echo "alias q='exit'"
 {
 echo "eval \$(dbus-launch --sh-syntax --exit-with-x11)"
 echo
-echo "pipewire &"
-echo "pipewire-pulse &"
+echo "pipewire \&"
+echo "pipewire-pulse \&"
 echo
-echo "xterm &"
+echo "xterm \&"
 echo "exec jwm"
 } >> ~/.xinitrc
 
