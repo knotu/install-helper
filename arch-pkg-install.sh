@@ -20,7 +20,7 @@ pacman --needed -S moc mpv pcsx2 steam mtpaint feh
 # cli
 pacman --needed -S atool bash-completion btop ffmpeg ffmpeg4.4 imagemagick micro ncdu newsboat pulsemixer rsync weechat sxhkd xdotool yt-dlp 
 # gui and other
-pacman --needed -S galculator gparted keepassxc meld scite veracrypt noto-fonts noto-fonts-emoji ttf-liberation qemu-base tigervnc
+pacman --needed -S galculator gparted keepassxc meld scite veracrypt noto-fonts noto-fonts-emoji ttf-liberation qemu
 
 #enable services
 systemctl enable --now sshd
