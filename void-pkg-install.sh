@@ -30,13 +30,13 @@ xbps-install xorg-minimal xorg-fonts xev xdotool xkill xprop xrandr xrdb xset xs
 xbps-install corectrl mesa-dri mesa-vaapi xf86-video-amdgpu vulkan-loader mesa-vulkan-radeon libdrm-32bit libglvnd-32bit mesa-dri-32bit mesa-vulkan-radeon-32bit vulkan-loader-32bit
 
 # desktop and gui based 
-xbps-install dmenu dunst firefox gparted jwm keepassxc meld moc mpv mtpaint pcmanfm scite steam synergy 
+xbps-install dmenu dunst firefox gparted jwm keepassxc meld moc mpv mtpaint pcmanfm scite steam synergy sxhkd
 
 # audio and video
 xbps-install ffmpeg moc mpv pipewire pulsemixer alsa-plugins-pulseaudio
 
 # cli based
-xbps-install alacritty atool bash-completion bashmount btop feh ImageMagick lm_sensors micro ncdu newsboat psmisc rsync sxhkd weechat yt-dlp
+xbps-install alacritty atool bash-completion bashmount btop feh ImageMagick lm_sensors micro ncdu newsboat opendoas psmisc rsync shellcheck weechat yt-dlp
 
 # unsorted various
 xbps-install elogind libgcc-32bit libstdc++-32bit gtk+ imlib2 vpm vsv
