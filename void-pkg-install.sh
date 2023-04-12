@@ -36,7 +36,7 @@ xbps-install dmenu dunst firefox gparted jwm keepassxc meld moc mpv mtpaint pcma
 xbps-install ffmpeg moc mpv pipewire pulsemixer alsa-plugins-pulseaudio
 
 # cli based
-xbps-install alacritty atool bash-completion bashmount btop feh ImageMagick lm_sensors micro ncdu newsboat opendoas psmisc rsync shellcheck weechat yt-dlp
+xbps-install alacritty atool bash-completion bashmount btop feh ImageMagick lm_sensors micro ncdu newsboat opendoas psmisc rsync shellcheck vivid weechat yt-dlp
 
 # unsorted various
 xbps-install elogind libgcc-32bit libstdc++-32bit gtk+ imlib2 vpm vsv
