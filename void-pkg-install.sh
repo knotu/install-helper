@@ -39,7 +39,7 @@ xbps-install ffmpeg moc mpv pipewire pulsemixer alsa-plugins-pulseaudio
 xbps-install alacritty atool bash-completion bashmount btop feh ImageMagick lm_sensors micro ncdu newsboat opendoas psmisc rsync shellcheck vivid xtools weechat yt-dlp
 
 # unsorted various
-xbps-install elogind libgcc-32bit libstdc++-32bit gtk+ imlib2 vpm vsv
+xbps-install elogind libgcc-32bit libstdc++-32bit gtk+ imlib2 vpm vsv xmirror
 
 # fonts
 xbps-install noto-fonts-emoji noto-fonts-ttf 
