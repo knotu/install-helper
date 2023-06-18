@@ -18,9 +18,11 @@ pacman --needed -S firefox vivaldi vivaldi-ffmpeg-codecs
 # entertainment
 pacman --needed -S moc mpv pcsx2 steam mtpaint feh
 # cli
-pacman --needed -S atool bash-completion btop ffmpeg ffmpeg4.4 imagemagick micro ncdu newsboat pulsemixer rsync weechat sxhkd vivid xdotool yt-dlp 
+pacman --needed -S atool bash-completion btop ffmpeg ffmpeg4.4 imagemagick micro ncdu newsboat pulsemixer rsync weechat sxhkd vivid xdotool yt-dlp shfmt
 # gui and other
 pacman --needed -S galculator gparted keepassxc meld scite veracrypt noto-fonts noto-fonts-emoji ttf-liberation qemu
+# wayland related
+pacman --needed -S river i3bar-river i3status i3blocks wlr-randr grim wf-record swayimg swaybg slurp foot bemenu wev wtype
 
 #enable services
 systemctl enable --now sshd
