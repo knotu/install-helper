@@ -26,6 +26,9 @@ xbps-install base-devel libX11-devel libXft-devel libXinerama-devel
 # xorg related and X related
 xbps-install xorg-minimal xorg-fonts xev xdotool xkill xprop xrandr xrdb xset xsetroot xterm xtool xorg-fonts
 
+# wayland related (river installed manually)
+xbps-install wayland-devel wayland-protocols libevdev-devel wlroots-devel scdoc pkg-config xorg-server-xwayland shfmt wev i3blocks i3status grim wlr-randr wf-recorder swaybg swayimg slurp foot bemenu wev wtype
+
 # graphic and related
 xbps-install mesa-dri mesa-vaapi xf86-video-amdgpu vulkan-loader mesa-vulkan-radeon libdrm-32bit libglvnd-32bit mesa-dri-32bit mesa-vulkan-radeon-32bit vulkan-loader-32bit
 
