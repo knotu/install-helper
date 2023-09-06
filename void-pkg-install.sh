@@ -39,7 +39,7 @@ xbps-install dmenu dunst feh firefox galculator gparted i3blocks i3status jwm ke
 xbps-install alsa-plugins-pulseaudio ffmpeg moc mpv pipewire pulsemixer
 
 # cli based
-xbps-install 7zip alacritty atool bash-completion bashmount btop curl ImageMagick lm_sensors micro ncdu newsboat opendoas psmisc rsync shellcheck shfmt udiskie vivid weechat wget yt-dlp zip
+xbps-install 7zip alacritty atool bash-completion bashmount bottom btop curl ImageMagick lm_sensors micro ncdu newsboat opendoas psmisc rsync shellcheck shfmt udiskie vivid weechat wget yt-dlp zip
 
 # void utils & wrappers
 xbps-install vpm vsv xmirror xtools 
